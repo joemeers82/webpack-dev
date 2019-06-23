@@ -1,11 +1,17 @@
-/*
-* @Author: Joe Meers Jankowski
-* @Date:   2019-06-22 09:59:31
-* @Last Modified by:   Joe Meers Jankowski
-* @Last Modified time: 2019-06-22 10:21:02
-*/
-function helloWorld() {
-	console.log('hello world');
+import HelloWorldButton from './components/hello-world-button/hello-world-button.js';
+import Heading from './components/heading/heading.js';
+import React from 'react';
+
+const heading = new Heading();
+heading.render('hello world');
+
+const helloWorldButton = new HelloWorldButton();
+helloWorldButton.render();
+
+if(process.env.NODE_ENV === 'production' ){
+	console.log('production mode');
 }
 
-export default helloWorld;
+else if(process.env.NODE_ENV === 'development' ){
+	console.log('development mode');
+}

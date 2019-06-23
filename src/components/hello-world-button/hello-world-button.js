@@ -1,10 +1,3 @@
-/*
-* @Author: Joe Meers Jankowski
-* @Date:   2019-06-22 09:59:31
-* @Last Modified by:   Joe Meers Jankowski
-* @Last Modified time: 2019-06-22 12:27:23
-*/
-
 import './hello-world-button.scss';
 
 class HelloWorldButton {
